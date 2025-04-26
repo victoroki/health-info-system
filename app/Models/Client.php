@@ -10,12 +10,18 @@ class Client extends Model
         'name',
         'email',
         'dob',
-        'phone'
+        'phone',
+        'address'
+    ];
 
+    protected $casts = [
+        'dob' => 'date',
+        'pivot.enrollment_date' => 'datetime'
     ];
 
     public function healthPrograms()
     {
         return $this->belongsToMany(HealthProgram::class)->withPivot('enrollment_date');
     }
+    
 }
