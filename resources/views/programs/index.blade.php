@@ -52,12 +52,12 @@
                                 <td>
                                     <div class="d-flex justify-content-end gap-2">
                                         <!-- View Button -->
-                                        <a href="{{ route('programs.show', $program->id) }}" 
+                                        <!-- <a href="{{ route('programs.show', $program->id) }}" 
                                            class="btn btn-sm btn-outline-primary"
                                            data-bs-toggle="tooltip" 
                                            title="View Details">
                                             <i class="bi bi-eye"></i>
-                                        </a>
+                                        </a> -->
                                         
                                         <!-- Edit Button -->
                                         <a href="{{ route('programs.edit', $program->id) }}" 
