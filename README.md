@@ -6,7 +6,7 @@
 
 > Modern healthcare management system for medical professionals
 
-![HealthTrack Pro Dashboard Preview](https://via.placeholder.com/800x400?text=HealthTrack+Pro+Dashboard)
+![Screenshot 2025-04-26 225319](https://github.com/user-attachments/assets/feabfb96-b397-4be8-b284-a6490e7b1bb8)
 
 ## ✨ Key Features
 
@@ -80,13 +80,11 @@ php artisan db:seed
 php artisan serve 
 Access your application at http://localhost:8000
 
-Now, **this will end the code block** and ensure the rest of the README continues normally.
-
  ``` 
 
 ---
 
-🗂️ Main Features
+## 🗂️ Main Features
 Health Program Management: Add, edit, and delete health programs.
 
 Client Management: Register new clients and manage client data.
@@ -97,7 +95,9 @@ Profile Viewing: See full client details including their enrolled programs.
 
 API Access: Securely expose client profiles through API endpoints.
 
-🔌 API Endpoints
+---
+
+##🔌 API Endpoints
 
 Method	Endpoint	Description
 POST	/api/programs	Create a new health program
@@ -121,38 +121,26 @@ php artisan test
 Manual API testing was conducted using Postman.
 
 
-
-📸 Screenshots
-Dashboard
+![Screenshot 2025-04-27 104222](https://github.com/user-attachments/assets/ccfb2d96-4463-4cbc-8c90-9abda1b23b7c)
 
 Client Enrollment
 
 Postman API Test
 
 
+---
 
-🧹 Clean Commit History
-Commits were structured to reflect:
-
-Logical feature additions
-
-Bug fixes
-
-Code improvements
-
-Testing updates
-
-🙏 Acknowledgement
+## 🙏 Acknowledgement
 Thank you for the opportunity to work on this challenge. I built the solution independently, ensuring quality, security, and maintainability.
 
-📎 Important Links
+## 📎 Important Links
 [Live Demo]:  https://thoughtless-myranda-okiomerim-c91b6d1c.koyeb.app
 
 
-![Screenshot 2025-04-26 225319](https://github.com/user-attachments/assets/feabfb96-b397-4be8-b284-a6490e7b1bb8)
+
 
 GitHub Repository
 
-### 🧠 Author
+## 🧠 Author
 Victor Mongare
 AWS Certified Cloud Practitioner | Backend Developer | DevOps Enthusiast
