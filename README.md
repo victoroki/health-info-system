@@ -80,14 +80,18 @@ php artisan db:seed
 php artisan serve 
 Access your application at http://localhost:8000
 
+Now, **this will end the code block** and ensure the rest of the README continues normally.
+
+ ``` 
+
+---
+
 🗂️ Main Features
 Health Program Management: Add, edit, and delete health programs.
 
 Client Management: Register new clients and manage client data.
 
 Program Enrollment: Enroll clients into one or multiple health programs.
-
-Client Search: Quickly find registered clients.
 
 Profile Viewing: See full client details including their enrolled programs.
 
@@ -142,9 +146,10 @@ Testing updates
 Thank you for the opportunity to work on this challenge. I built the solution independently, ensuring quality, security, and maintainability.
 
 📎 Important Links
-Live Demo:  https://thoughtless-myranda-okiomerim-c91b6d1c.koyeb.app
+[Live Demo]:  https://thoughtless-myranda-okiomerim-c91b6d1c.koyeb.app
 
-[Prototype Demonstration](link-to-demo or you can mention "screenshots above")
+
+![Screenshot 2025-04-26 225319](https://github.com/user-attachments/assets/feabfb96-b397-4be8-b284-a6490e7b1bb8)
 
 GitHub Repository
 
