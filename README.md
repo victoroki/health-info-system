@@ -10,46 +10,144 @@
 
 ## ✨ Key Features
 
-### Program Management
-- Create specialized health programs (TB, Malaria, HIV, etc.)
-- Dynamic program configuration
-- Real-time enrollment tracking
+# 🏥 Basic Health Information System
 
-### Client Portal
-- Secure patient registration system
-- Comprehensive profile management
-- Multi-program enrollment capabilities
+A clean, API-first system built with **Laravel 12** for managing clients and their health programs (e.g., TB, Malaria, HIV).  
+This project was developed as part of a technical screening task.
 
-### Intelligent Search
-- Instant client lookup
-- Filter by program/enrollment status
-- Quick-access patient profiles
+---
 
-### Integrated API
-- RESTful endpoints for system integration
-- JWT-secured data access
-- Swagger documentation included
+## 📋 Project Requirements
 
-## 🚀 Quick Start
+The system allows a doctor (system user) to:
+- Create a health program (e.g., TB, Malaria, HIV).
+- Register a new client in the system.
+- Enroll a client in one or more programs.
+- Search for a client.
+- View a client’s profile, including enrolled programs.
+- Expose the client profile via an API to other systems.
 
-### Prerequisites
-- PHP 8.1+
-- MySQL 5.7+
-- Composer 2.0+
+---
+
+## 🚀 Solution Highlights
+
+- **Framework**: Laravel 12 (PHP 8+)
+- **Architecture**: API-First Design
+- **Security**:
+  - Password hashing (bcrypt)
+  - Authenticated API access
+  - Input validation
+- **Dashboard**:
+  - Interactive admin dashboard for managing clients and programs
+- **Testing**:
+  - **PHPUnit** for automated backend tests
+  - **Postman** for API endpoint validation
+- **Clean Code**: Follows MVC design pattern, Service layer abstraction, and RESTful conventions.
+- **Future Ready**: Easily extendable and scalable.
+
+---
+
+## 🛠️ Project Setup
 
 ```bash
-# Clone repository
-git clone https://github.com/your-repo/healthtrack-pro.git && cd healthtrack-pro
+# Clone the repository
+git clone https://github.com/victoroki/health-information-system.git
+
+# Navigate into the project directory
+cd health-information-system
 
 # Install dependencies
 composer install
 
-# Configure environment
+# Create environment file
 cp .env.example .env
+
+# Configure your database settings in .env
+DB_DATABASE=your_database
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+
+# Generate application key
 php artisan key:generate
 
 # Run migrations
-php artisan migrate --seed
+php artisan migrate
 
-# Start development server
-php artisan serve
+# (Optional) Seed database
+php artisan db:seed
+
+# Serve the application
+php artisan serve 
+Access your application at http://localhost:8000
+
+🗂️ Main Features
+Health Program Management: Add, edit, and delete health programs.
+
+Client Management: Register new clients and manage client data.
+
+Program Enrollment: Enroll clients into one or multiple health programs.
+
+Client Search: Quickly find registered clients.
+
+Profile Viewing: See full client details including their enrolled programs.
+
+API Access: Securely expose client profiles through API endpoints.
+
+🔌 API Endpoints
+
+Method	Endpoint	Description
+POST	/api/programs	Create a new health program
+POST	/api/clients	Register a new client
+GET	/api/clients	Search for a client
+GET	/api/clients/{id}	View a specific client’s profile.
+
+🧪 Testing
+✅ PHPUnit
+
+
+Client registration
+
+Program creations
+
+Run tests:
+
+
+php artisan test
+✅ Postman Collection
+Manual API testing was conducted using Postman.
+
+
+
+📸 Screenshots
+Dashboard
+
+Client Enrollment
+
+Postman API Test
+
+
+
+🧹 Clean Commit History
+Commits were structured to reflect:
+
+Logical feature additions
+
+Bug fixes
+
+Code improvements
+
+Testing updates
+
+🙏 Acknowledgement
+Thank you for the opportunity to work on this challenge. I built the solution independently, ensuring quality, security, and maintainability.
+
+📎 Important Links
+Live Demo:  https://thoughtless-myranda-okiomerim-c91b6d1c.koyeb.app
+
+[Prototype Demonstration](link-to-demo or you can mention "screenshots above")
+
+GitHub Repository
+
+### 🧠 Author
+Victor Mongare
+AWS Certified Cloud Practitioner | Backend Developer | DevOps Enthusiast
